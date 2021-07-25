@@ -12,18 +12,22 @@ app_license = "MIT"
 required_apps = ['erpnext']
 
 fixtures = [
+    # Education
+    "Course",
+    
     # Core
     "Custom Field",
     "Client Script",
     "Property Setter",
     
-    # System Settings
+    # Settings
     "System Settings",
+    "Education Settings",
+    "Website Settings",
     
     # Website
     "Color",
     "Website Theme",
-    "Website Settings",
     "Web Page",
 ]
 
@@ -41,7 +45,7 @@ website_context = {
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/isppme/css/isppme.css"
+app_include_css = "/assets/isppme/css/desk.css"
 # app_include_js = "/assets/isppme/js/isppme.js"
 
 # include js, css files in header of web template
