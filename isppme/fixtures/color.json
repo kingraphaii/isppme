@@ -1,0 +1,22 @@
+[
+ {
+  "color": "#1b355d",
+  "docstatus": 0,
+  "doctype": "Color",
+  "modified": "2021-07-25 10:30:55.519276",
+  "name": "ISPPME Navy Blue",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ },
+ {
+  "color": "#1b75aa",
+  "docstatus": 0,
+  "doctype": "Color",
+  "modified": "2021-07-25 10:37:36.632587",
+  "name": "ISPPME Light Blue",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

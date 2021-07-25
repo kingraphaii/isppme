@@ -1,0 +1,25 @@
+.web-footer {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    min-height: unset !important;
+}
+
+.for-login, .for-forgot, .for-signup, .for-email-login {
+    display: none;
+    margin: 55px 0 10px 0 !important;
+}
+
+.navbar {
+    /*padding: 0.5rem 0.75rem;*/
+}
+
+.navbar-brand img {
+    display: inline-block;
+    /*max-width: 150px;*/
+    /*max-height: 55px;*/
+}
+
+.navbar-light {
+    border-bottom: 1px solid #789dca40;
+    background: white;
+}

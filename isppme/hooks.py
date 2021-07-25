@@ -9,6 +9,34 @@ app_color = "blue"
 app_email = "percival@yate.co.zw"
 app_license = "MIT"
 
+required_apps = ['erpnext']
+
+fixtures = [
+    # Core
+    "Custom Field",
+    "Client Script",
+    "Property Setter",
+    
+    # System Settings
+    "System Settings",
+    
+    # Website
+    "Color",
+    "Website Theme",
+    "Website Settings",
+    "Web Page",
+]
+
+app_logo_url = '/assets/isppme/images/isppme-logo-cropped.png'
+
+brand_html = '<div><img src="/assets/isppme/images/isppme-logo-cropped.png"> TennisMart</div>'
+
+website_context = {
+    "favicon": "/assets/isppme/images/isppme-favicon.png",
+    "splash_image": "/assets/isppme/images/isppme-logo-cropped.png",
+    "brand_html": '<div><img src="/assets/isppme/images/isppme-logo-cropped.png" style=""></div>'
+}
+
 # Includes in <head>
 # ------------------
 
@@ -17,7 +45,7 @@ app_license = "MIT"
 # app_include_js = "/assets/isppme/js/isppme.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/isppme/css/isppme.css"
+web_include_css = "/assets/isppme/css/web.css"
 # web_include_js = "/assets/isppme/js/isppme.js"
 
 # include custom scss in every website theme (without file extension ".scss")
@@ -181,4 +209,3 @@ app_license = "MIT"
 # auth_hooks = [
 # 	"isppme.auth.validate"
 # ]
-
