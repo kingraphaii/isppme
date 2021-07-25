@@ -1,0 +1,32 @@
+{
+ "custom_fields": [],
+ "custom_perms": [],
+ "doctype": "Program",
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2021-07-25 17:45:16.286429",
+   "default_value": null,
+   "doc_type": "Program",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "is_published",
+   "idx": 0,
+   "modified": "2021-07-25 17:45:16.286429",
+   "modified_by": "admin@isppme.local",
+   "name": "Program-is_published-print_hide",
+   "owner": "admin@isppme.local",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "print_hide",
+   "property_type": "Check",
+   "row_name": null,
+   "value": "1"
+  }
+ ],
+ "sync_on_migrate": 1
+}
