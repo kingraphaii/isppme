@@ -27,7 +27,6 @@ fixtures = [
     
     # Website
     "Color",
-    "Website Theme",
     "Web Page",
 ]
 
