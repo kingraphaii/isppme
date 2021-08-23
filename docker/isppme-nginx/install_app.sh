@@ -2,9 +2,8 @@
 
 APP_NAME=${1}
 APP_REPO=${2}
-APP_BRANCH=${3}
 
-[ "${APP_BRANCH}" ] && BRANCH="-b ${APP_BRANCH}"
+FRAPPE_BRANCH="-b develop"
 
 mkdir -p /home/frappe/frappe-bench/sites/assets
 # shellcheck disable=SC2164
@@ -15,9 +14,9 @@ mkdir -p apps
 # shellcheck disable=SC2164
 cd apps
 # shellcheck disable=SC2086
-git clone --depth 1 https://github.com/frappe/frappe ${BRANCH}
+git clone --depth 1 https://github.com/frappe/frappe ${FRAPPE_BRANCH}
 # shellcheck disable=SC2086
-git clone --depth 1 ${APP_REPO} ${BRANCH}
+git clone --depth 1 ${APP_REPO}
 
 # shellcheck disable=SC2164
 cd /home/frappe/frappe-bench/apps/frappe
