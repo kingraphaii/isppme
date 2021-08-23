@@ -1,3 +1,3 @@
-FROM frappe/erpnext-worker:v13.9.2
+FROM frappe/erpnext-worker:v13
 
 RUN install_app isppme https://github.com/kingraphaii/isppme

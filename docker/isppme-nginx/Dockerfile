@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install git -y
 RUN chmod +x /install_app
 RUN /install_app isppme https://github.com/kingraphaii/isppme.git
 
-FROM frappe/erpnext-nginx:v13.9.2
+FROM frappe/erpnext-nginx:v13
 
 COPY --from=0 /home/frappe/frappe-bench/sites/ /var/www/html/
 COPY --from=0 /rsync /rsync
