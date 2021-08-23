@@ -33,9 +33,9 @@ services:
       - SOCKETIO_PORT=9000
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.excel-erpnext-nginx.rule=Host(${SITES})"
+      - "traefik.http.routers.isppme-nginx.rule=Host(${SITES})"
       - "${ENTRYPOINT_LABEL}"
-      - "traefik.http.services.excel-erpnext-nginx.loadbalancer.server.port=80"
+      - "traefik.http.services.isppme-nginx.loadbalancer.server.port=80"
     volumes:
       - sites-vol:/var/www/html/sites:rw
       - assets-vol:/assets:rw
