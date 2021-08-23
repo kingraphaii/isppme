@@ -4,7 +4,7 @@ COPY install_app.sh /install_app
 
 RUN apt-get update && apt-get install git -y
 RUN chmod +x /install_app
-RUN install_app isppme https://github.com/kingraphaii/isppme.git main
+RUN /install_app isppme https://github.com/kingraphaii/isppme.git main
 
 FROM frappe/erpnext-nginx:v13.9.2
 
