@@ -24,7 +24,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
   isppme-nginx:
-    image: isppme-nginx:${ERPNEXT_VERSION}
+    image: isppme-nginx:latest
     restart: on-failure
     environment:
       - FRAPPE_PY=erpnext-python
@@ -41,7 +41,7 @@ services:
       - assets-vol:/assets:rw
 
   erpnext-python:
-    image: isppme-worker:${ERPNEXT_VERSION}
+    image: isppme-worker:latest
     restart: on-failure
     environment:
       - MARIADB_HOST=${MARIADB_HOST}
@@ -55,7 +55,7 @@ services:
       - assets-vol:/home/frappe/frappe-bench/sites/assets:rw
 
   frappe-socketio:
-    image: frappe/frappe-socketio:${FRAPPE_VERSION}
+    image: frappe/frappe-socketio:develop
     restart: on-failure
     depends_on:
       - redis-socketio
@@ -63,7 +63,7 @@ services:
       - sites-vol:/home/frappe/frappe-bench/sites:rw
 
   isppme-worker-default:
-    image: isppme-worker:${ERPNEXT_VERSION}
+    image: isppme-worker:latest
     restart: on-failure
     command: worker
     depends_on:
@@ -73,7 +73,7 @@ services:
       - sites-vol:/home/frappe/frappe-bench/sites:rw
 
   isppme-worker-short:
-    image: isppme-worker:${ERPNEXT_VERSION}
+    image: isppme-worker:latest
     restart: on-failure
     command: worker
     environment:
@@ -85,7 +85,7 @@ services:
       - sites-vol:/home/frappe/frappe-bench/sites:rw
 
   isppme-worker-long:
-    image: isppme-worker:${ERPNEXT_VERSION}
+    image: isppme-worker:latest
     restart: on-failure
     command: worker
     environment:
@@ -97,7 +97,7 @@ services:
       - sites-vol:/home/frappe/frappe-bench/sites:rw
 
   erpnext-schedule:
-    image: isppme-worker:${ERPNEXT_VERSION}
+    image: isppme-worker:latest
     restart: on-failure
     command: schedule
     depends_on:
@@ -134,7 +134,7 @@ services:
       - mariadb-vol:/var/lib/mysql
 
   site-creator:
-    image: isppme-worker:${ERPNEXT_VERSION}
+    image: isppme-worker:latest
     restart: "no"
     command: new
     depends_on:
