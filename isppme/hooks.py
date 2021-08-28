@@ -25,9 +25,11 @@ fixtures = [
     "Education Settings",
     "Website Settings",
     
+    
     # Website
     "Color",
     "Web Page",
+"Website Theme",
 ]
 
 app_logo_url = '/assets/isppme/images/isppme-logo-cropped.png'
